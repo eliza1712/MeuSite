@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Mundo Encantado</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+
+    body {
+        background: linear-gradient(135deg, #e0f7fa, #81d4fa);
+        background-attachment: fixed;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    
+    .banner-container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    
+    .texto-banner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente */
+        padding: 20px;
+        border-radius: 15px;
+        color: black;
+    }
+
+    
+    .card {
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="banner-container">
+        <img src="c:\Users\webm\Downloads\parque encantado.png" alt="Parque">
+        <div class="banner-text">
+            <h1>🎡 Parque Mundo Encantado</h1>
+            <p>Um lugar cheio de diversão para toda a família!</p>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">🎢 Atrações</h2>
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+                <div class="card text-center border-danger">
+                    <img src="https://lh5.googleusercontent.com/ku2tmT0DKhwAlySo1_sIvrbjiNFGxJj533TwxLDfZCvJZynaJnGTyeNpzHYdr7v3MP0cIbUg3xAnLUlaF1FxMQay1sGhBPUNTMf3T8Ik2_J5qkCnAGQq1P-BwlfbPJAy1DQV1fT-s1wUT2yEhw" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="text-danger">🎢 Montanha Russa</h5>
+                        <p>Alta velocidade e muita adrenalina.</p>
+                        <p><strong>R$ 40,00</strong></p>
+                        <button class="btn btn-danger" onclick="ComprarIngresso('montanha russa', 40)"> Comprar Ingresso </button>
+                    </div>
+                </div>
+            </div>
+
+
+              <div class="col-md-4">
+                <div class="card text-center border-danger">
+                    <img src="https://saopauloparacriancas.com.br/wp-content/uploads/2021/09/229ec405-8b34-484c-8aa2-f6f0b0bbfb96.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="text-danger">🎡 Roda Gigante</h5>
+                        <p>Vista incrível de todo o parque.</p>
+                        <p><strong>R$ 25,00</strong></p>
+                        <button class="btn btn-warning" onclick="ComprarIngresso('roda gigante', 25)"> Comprar Ingresso </button>
+                    </div>
+                </div>
+            </div>
+
+
+            
+              <div class="col-md-4">
+                <div class="card text-center border-danger">
+                    <img src="https://radicalplaypark.com.br/wp-content/uploads/2025/07/Carrossel-Brinquedo-Radical-Play-Park-em-Olimpia-Sao-Paulo.webp" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="text-danger">🎠 Carrossel</h5>
+                        <p>Diversão leve para toda familia.</p>
+                        <p><strong>R$ 20,00</strong></p>
+                        <button class="btn btn-success" onclick="ComprarIngresso('carrossel',20)"> Comprar Ingresso </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card text-center border-danger">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/e0/c8/0f/play-city.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="text-danger">🚗 Bate-Bate</h5>
+                        <p>Colisões divertidas com amigos.</p>
+                        <p><strong>R$ 35,00</strong></p>
+                        <button class="btn btn-info" onclick="ComprarIngresso('bate-bate',35)"> Comprar Ingresso </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card text-center border-danger">
+                    <img src="https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2014/12/24/falcons-queda.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="text-danger">🗼 Torre Queda Livre</h5>
+                        <p>Queda radical do topo.</p>
+                        <p><strong>R$ 25,00</strong></p>
+                        <button class="btn btn-warning" onclick="ComprarIngresso('torre queda livre',25)"> Comprar Ingresso </button>
+                    </div>
+                </div>
+            </div>
+
+
+             <div class="col-md-4">
+                <div class="card text-center border-danger">
+                    <img src="https://www.parquemarisa.com.br/includes/asp/reduz.asp?img=27082017_963.jpg&height=450" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="text-danger">🏴‍☠️ Barco Viking</h5>
+                        <p>Movimento radical e emocionante.</p>
+                        <p><strong>R$ 15,00</strong></p>
+                        <button class="btn btn-danger" onclick="ComprarIngresso('barco Viking',15)"> Comprar Ingresso </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contaner mt-5">
+        <h2 class="text-center mb-4">🍔 Alimentação</h2>
+
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card text-center border-warning">
+                    <img src="https://cdn.awsli.com.br/600x450/2475/2475729/produto/366945305/1f5eeb14692d786c955a70858e0ac0e1-v2r51qobgi.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="text-warning">🍿 Pipoca</h5>
+                        <p>Quentinhas e crocantes.</p>
+                        <p><strong>R4 8,00</strong></p>
+                         <button class="btn btn-warning" onclick="ComprarIngresso('pipoca',8)"> Comprar </button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3">
+                <div class="card text-center border-warning">
+                    <img src="https://static.vecteezy.com/system/resources/previews/038/166/469/non_2x/ai-generated-a-cotton-candy-on-a-stick-with-a-blue-sky-in-the-background-photo.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="text-info">🍭 Algoda Doce</h5>
+                        <p>Colorido e delicioso.</p>
+                        <p><strong>R4 10,00</strong></p>
+                         <button class="btn btn-info" onclick="ComprarIngresso('algodao doce',10)"> Comprar </button>
+                    </div>
+                </div>
+            </div>
+
+
+             <div class="col-md-3">
+                <div class="card text-center border-warning">
+                    <img src="https://alegrafoods.com.br/wp-content/uploads/2020/09/hot-dogs-pwy2hz8-620x350.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="text-danger">🌭 Hot Dog</h5>
+                        <p>Completo e saboroso.</p>
+                        <p><strong>R4 15,00</strong></p>
+                         <button class="btn btn-info" onclick="ComprarIngresso('hot dog',15)"> Comprar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center">📍 Endereço</h2>
+        <p class="text-center">
+            Av. Diversão Feliz, 123 <br>
+            São Paulo - SP <br> 
+            Aberto todos os dias das 10h ás 22h
+        </p>
+    </div>
+
+
+
+
+      <script>
+        function ComprarIngresso(atracao, preco) {
+            let nome = prompt("Digite seu nome");
+            let qtd = prompt("Quantos ingressos deseja?");
+            if (nome && qtd) {
+                let total = preco * Number(qtd);
+                alert("Olá, " + nome + "! \n\nVocê adquiriu " + qtd + " ingresso(s) para: " + atracao + 
+                ". \nTotal: R$ " + total.toFixed(2).replace(".", ",") + ". \n\nBOA DIVERSÃO!");
+            }
+        }
+    </script>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
