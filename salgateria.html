@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salgateria</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <style>
+        body {
+            background: #f5f5f5;
+        }
+
+        .header-topo {
+
+            background: linear-gradient(to rigth, #ff6a00, #ff3c3c);
+            padding: 30px 20px;
+
+        }
+
+        .titulo {
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        .sub {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        .logo {
+            width: 80px;
+        }
+
+        .section-title {
+            padding: 10px;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .fritos {background: #ff4d4d;}
+        .assados {background: #ffa500;}
+        .doces {background: #ff66b2;}
+        .bebidas {background: #6a5acd;}
+
+        .card img{
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .btn-pedir {
+            width: 100%;
+        }
+    </style>
+
+
+
+
+
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header-topo container-fluid bg-danger">
+            <div class="row align-items-center text-white">
+
+                <div class="col-md-4 text-start">
+                    <h1 class="titulo">
+                        Salgateria
+                    </h1>
+
+                    <p class="sub">O sabor que você ama.</p>
+
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <h4>Os melhores salgados para qualquer momentos.</h4>
+                </div>
+
+                <div class="col-md-4 text-end">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1CbaxB2lTIbsYcLgJx_0npc6Z4cgZUG6jVw&s" class="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center my-3">
+            <button class="btn btn-danger">Fritos</button>
+            <button class="btn btn-warning">Assados</button>
+            <button class="btn btn-primary">Doces</button>
+            <button class="btn btn-dark">Bebidas</button>
+        </div>
+
+        <div class="section-title fritos">Salgados Fritos</div>
+
+        <div class="row mt-3">
+
+            <div class="col-md-4">
+                <div class="card p-1">
+
+                    <img src="https://pratofundo.com/wp-content/uploads/receita-coxinha-peru025.jpg" class="card-img-top">
+                    <h5>Coxinha</h5>
+                    <p>$ 5,00</p>
+                    <button class="btn btn-danger btn-pedir" onclick="MostrarMensagem('Coxinha', '5,00')">Pedir</button>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card p-1">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtxQnfe-wg4w4zJDSv-9Hekg_0P84fMwZv8Rgg54pF5gWaB8Bs0CI239kq&s=10" class="card-img-top">
+                    <h5>Risole</h5>
+                    <p>$ 4,50</p>
+                    <button class="btn btn-danger btn-pedir" onclick="MostrarMensagem('Risole', '4,50')">Pedir</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-1">
+
+                    <img src="https://www.perdigao.com.br/assets/_images/842fba2510a8771849a3a6697dce6ddd6825fe77.webp" class="card-img-top">
+                    <h5>Pastel</h5>
+                    <p>$ 5,00</p>
+                    <button class="btn btn-danger btn-pedir" onclick="MostrarMensagem('Pastel', '5,00')">Pedir</button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="section-title assados">Salgados Assados</div>
+
+        <div class="row mt-3">
+
+            <div class="col-md-4">
+                <div class="card p-1">
+                    <img src="https://s2-receitas.glbimg.com/LkFUI5GpQ-VNswgmn9-pPSm-Cjo=/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2025/6/i/z2mrzpRXSuGOzSUMEjyg/esfiha-de-carne-moida-receita.jpg" class="card-img-top">
+                    <h5>Esfirra</h5>
+                    <p>$ 4,50</p>
+                    <button class="btn btn-warning btn-pedir" onclick="MostrarMensagem('Esfirra', '4,50')">Pedir</button>
+                </div>
+            </div>
+
+
+             <div class="col-md-4">
+                <div class="card p-1">
+                    <img src="https://s2-receitas.glbimg.com/5YsowRRHVNhoLDaIEhTXq6359LE=/0x0:1200x675/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/X/o/5Duju4TY2qzEQleUgCAg/empada-de-frango-tem-que-ir-na-ana-maria-.jpg" class="card-img-top">
+                    <h5>Empada de Frango</h5>
+                    <p>$ 4,50</p>
+                    <button class="btn btn-warning btn-pedir" onclick="MostrarMensagem('Empada', '4,50')">Pedir</button>
+                </div>
+            </div>
+
+
+             <div class="col-md-4">
+                <div class="card p-1">
+                    <img src="https://essareceitafunciona.com.br/wp-content/uploads/2022/07/Pao-de-queijo-Essa-Receita-Funciona-9.jpg" class="card-img-top">
+                    <h5>Pão de Queijo</h5>
+                    <p>$ 4,50</p>
+                    <button class="btn btn-warning btn-pedir" onclick="MostrarMensagem('Pao de Queijo', '4,50')">Pedir</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="section-title doces">Doces</div>
+
+        <div class="row mt-4">
+
+            <div class="col-md-3">
+                <div class="card p-1">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Brigadeiro.jpg" class="card-img-top">
+                    <h5>Brigadeiro</h5>
+                    <p>$ 3,50</p>
+                    <button class="btn btn-primary btn-pedir" onclick="MostrarMensagem('Brigadeiro', '3,50')">Pedir</button>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="card p-1">
+                    <img src="https://cdn.casaeculinaria.com/wp-content/uploads/2023/05/16103507/Beijinho.webp" class="card-img-top">
+                    <h5>Beijinho</h5>
+                    <p>$ 3,50</p>
+                    <button class="btn btn-primary btn-pedir" onclick="MostrarMensagem('Beijinho', '3,50')">Pedir</button>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="card p-1">
+                    <img src="https://www.oetker.com.br/assets/recipes/assets/3051cd169d9e4c2ab8c785a3e25c9155/1272x764/ale__mg_9548jpg.webp" class="card-img-top">
+                    <h5>Mini Churros</h5>
+                    <p>$ 4,50</p>
+                    <button class="btn btn-primary btn-pedir" onclick="MostrarMensagem('Mini Churros', '4,50')">Pedir</button>
+                </div>
+            </div>
+
+
+               <div class="col-md-3">
+                <div class="card p-1">
+                    <img src="https://www.estadao.com.br/resizer/v2/AVCDNFW4ERIQBBMXF33MLHKNSU.jpg?quality=80&auth=b4945d0bbe684c6919218d0cb630195728f9e49a11a19ae82d0aaa5b1378b7c9&width=1200" class="card-img-top">
+                    <h5>Brownie</h5>
+                    <p>$ 3,00</p>
+                    <button class="btn btn-primary btn-pedir" onclick="MostrarMensagem('Brownie', '3,00')">Pedir</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section-title bebidas">Bebidas</div>
+
+        <div class="row mt-4">
+
+            
+            <div class="col-md-3">
+                <div class="card p-1">
+                    <img src="https://www.pintoburguer.com.br/wp-content/uploads/2021/09/refrigerante-ok.jpg" class="card-img-top">
+                    <h5>Refrigerantes</h5>
+                    <p>$ 8,50</p>
+                    <button class="btn btn-dark btn-pedir" onclick="MostrarMensagem('Refrigerantes', 8,50)">Pedir</button>
+                </div>
+            </div>
+
+             <div class="col-md-3">
+                <div class="card p-1">
+                    <img src="https://img.magnific.com/psd-gratuitas/vibrant-assortment-of-fresh-fruit-juices-with-mint-and-lime_84443-66428.jpg?semt=ais_hybrid&w=740&q=80" class="card-img-top">
+                    <h5>Sucos</h5>
+                    <p>$ 10,50</p>
+                    <button class="btn btn-dark btn-pedir" onclick="MostrarMensagem('Sucos', '10,50')">Pedir</button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card p-1">
+                    <img src="https://png.pngtree.com/png-clipart/20241121/original/pngtree-mineral-water-bottles-png-image_17283269.png" class="card-img-top">
+                    <h5>Agua</h5>
+                    <p>$ 4,50</p>
+                    <button class="btn btn-dark btn-pedir" onclick="MostrarMensagem('Agua', '4,50')">Pedir</button>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="card p-1">
+                    <img src="https://png.pngtree.com/png-clipart/20231018/original/pngtree-3-cup-milkshake-png-image_13354288.png" class="card-img-top">
+                    <h5>Milkshake</h5>
+                    <p>$ 13,50</p>
+                    <button class="btn btn-dark btn-pedir" onclick="MostrarMensagem('Milkshake', '13,50')">Pedir</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+     <script>
+function MostrarMensagem(produto, preco) {
+    let nome = prompt("Digite seu nome:");
+    let unidades = prompt("Quantas unidades você quer?");
+    
+    
+    let quantidade = parseInt(unidades) || 1; 
+    
+    alert("Olá, " + nome + "!\n\nVocê pediu: " + quantidade + "x " + produto + "\nValor unitário: R$ " + preco);
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
