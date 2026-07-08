@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <style>
+        body{
+            background-color: #FFF2F2;
+            font-family: Arial, sans-serif;
+            padding: 40px 0;
+        }
+
+        .moldura-site{
+            border: 2px solid#A64B6D;
+            background-color: #FFF2F2;
+            padding: 30px;
+            border-radius: 4px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .titulo-principal {
+            color: #8C264E;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .sub-banner {
+            background-color: #A64B6D;
+            color: white;
+            font-size: 13px;
+            padding: 6px 15px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .card-bolo {
+            background-color: white;
+            border: 1px solid #E6C5D3;
+            border-radius: 0px;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 25px;
+            transition: transform 0.2s;
+        }
+
+        .card-bolo:hover {
+            transform: scale(1.02)
+            box-shadow  0px 4px 15px rgba(140, 38, 78, 0.15);
+        }
+
+        .card-bolo img {
+            max-width: 100px;
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .card-bolo h5 {
+            color: #333333;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .card-bolo p {
+            color: #777777;
+            font-size: 12px;
+            height: 35px;
+        }
+
+        .btn-quero {
+            background-color: #FF7096;
+            color: white;
+            border: none;
+            font-size: 13px;
+            padding: 6px 20px;
+            border-radius: 4px;
+        }
+
+        .btn-quero:hover {
+            background-color: #E65C80;
+            color: white;
+        }
+
+        .rodape-texto {
+            color: #A64B6D;
+            font-style: italic;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="moldura-site text-center">
+
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <img src="c:\Users\webm\Downloads\logo (1).png" style="width: 80px">
+
+                </div>
+
+
+                
+            </div>
+
+            <h1 class="titulo-principal">Casa de Bolos</h1>
+
+            <div class="mb-5">
+                <span class="sub-banner">Os melhores bolos para seu café da tarde. Feitos com carinho.</span>
+            </div>
+
+            <div class="row px-3">
+
+                <div class="col-md-4">
+                    <div class="card-bolo">
+                        <img src="c:\Users\webm\Downloads\chocolate (1).png">
+                        <h5>Bolo de Chocolate</h5>
+                          <p>Massa fofinha com cobertura de chocolate</p>
+
+                        <button class="btn btn-quero" onclick="PedirBolo('Bolo de Chocolate', '35,00')">Eu Quero</button>
+                    </div>
+                </div>
+
+
+                
+                <div class="col-md-4">
+                    <div class="card-bolo">
+                        <img src="c:\Users\webm\Downloads\cenoura.png">
+                        <h5>Bolo de Cenoura</h5>
+                          <p>Esse é o tradicional bolo com cobertura</p>
+
+                        <button class="btn btn-quero" onclick="PedirBolo('Bolo de Cenoura', '30,00')">Eu Quero</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card-bolo">
+                        <img src="c:\Users\webm\Downloads\morango (1).png">
+                        <h5>Bolo de Morango</h5>
+                          <p>Recheados com creme e pedaços de morangos.</p>
+
+                        <button class="btn btn-quero" onclick="PedirBolo('Bolo de Morango ', '45,00')">Eu Quero</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card-bolo">
+                        <img src="c:\Users\webm\Downloads\prestigio.png">
+                        <h5>Bolo de Prestígio</h5>
+                          <p>Chocolate com recheio de coco.</p>
+
+                        <button class="btn btn-quero" onclick="PedirBolo('Bolo de Prestígio', '40,00')">Eu Quero</button>
+                    </div>
+                </div>
+
+                 <div class="col-md-4">
+                    <div class="card-bolo">
+                        <img src="c:\Users\webm\Downloads\red.png">
+                        <h5>Bolo de Red Velvet</h5>
+                          <p>Massa vermelha com creme especial.</p>
+
+                        <button class="btn btn-quero" onclick="PedirBolo('Bolo de Red Velvet', '50,00')">Eu Quero</button>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card-bolo">
+                        <img src="c:\Users\webm\Downloads\limao.png">
+                        <h5>Bolo de Limão</h5>
+                          <p>Massa leve com cobertura de limão.</p>
+
+                        <button class="btn btn-quero" onclick="PedirBolo('Bolo de Limão', '32,00')">Eu Quero</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <p class="rodape-texto">Escolha seus favoritos e viva momentos doces!</p>
+
+              </div>
+    </div>
+    
+
+    
+    
+
+    
+    <script>
+    function PedirBolo(produto, preco) {
+        let nome = prompt("Digite seu nome para o pedido:");
+        if (nome) {
+            let unidades = prompt("Quantas fatias deseja?");
+            let qnt = parseInt(unidades) || 1; 
+            alert("Olá, " + nome + "!\n Confira seu pedido:\n Sabor do Bolo:" + Sabor "\n Quantidade de fatias:" + qnt + "\n O pedido será enviado em breve.");
+        }
+    }
+    </script>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
